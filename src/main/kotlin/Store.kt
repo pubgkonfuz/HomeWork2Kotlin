@@ -17,51 +17,7 @@ class Store : Buyable{
     override fun buy(id: Int, user: User) {
         var userBalance = user.balance
         when (id) {
-            1 -> {
-                products[id]?.apply {
-                    println("Вы приобрели: $name")
-                    println("С вашего баланса списано: $price")
-                    userBalance -= price
-                    println("Благодарим за покупку!")
-                    println("Ваш товар был отправлен по адрессу: " + user.address)
-                    println("\nВаш баланс: " + userBalance)
-                }
-            }
-
-            2 -> {
-                products[id]?.apply {
-                    println("Вы приобрели: $name")
-                    println("С вашего баланса списано: $price")
-                    userBalance -= price
-                    println("Благодарим за покупку!")
-                    println("Ваш товар был отправлен по адрессу: " + user.address)
-                    println("\nВаш баланс: " + userBalance)
-                }
-            }
-
-            3 -> {
-                products[id]?.apply {
-                    println("Вы приобрели: $name")
-                    println("С вашего баланса списано: $price")
-                    userBalance -= price
-                    println("Благодарим за покупку!")
-                    println("Ваш товар был отправлен по адрессу: " + user.address)
-                    println("\nВаш баланс: " + userBalance)
-                }
-            }
-
-            4 -> {
-                products[id]?.apply {
-                    println("Вы приобрели: $name")
-                    println("С вашего баланса списано: $price")
-                    userBalance -= price
-                    println("Благодарим за покупку!")
-                    println("Ваш товар был отправлен по адрессу: " + user.address)
-                    println("\nВаш баланс: " + userBalance)
-                }
-            }
-
-            5 -> {
+            1,2,3,4,5 -> {
                 products[id]?.apply {
                     println("Вы приобрели: $name")
                     println("С вашего баланса списано: $price")
